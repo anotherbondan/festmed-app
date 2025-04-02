@@ -4,7 +4,8 @@
 Pastikan Anda telah menginstal:
 - [Node.js](https://nodejs.org/) (disarankan versi terbaru LTS)
 - [Git](https://git-scm.com/)
-- [npm](https://www.npmjs.com/) atau [yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/)
+- [PostgreSQL]()
 
 ## 📂 Struktur Proyek
 ```
@@ -58,7 +59,28 @@ festmed-app/
    http://localhost:3000
    ```
 ---
+## 📌 Setup Database
 
+1. **Buat database kosong dengan nama yang sama (`festmed-backend`)**
+   ```sh
+   CREATE DATABASE "festmed-backend";
+   ```
+2. **Buka file `.env.development` dan pastikan koneksi database sudah sesuai** 
+   ```
+   DATABASE_URL=postgres://postgres:yourpassword@localhost:1725/festmed-backend
+   ```
+   *(Ganti `yourpassword` dengan password PostgreSQL di komputer Anda)*
+
+3. **Jalankan migrasi Prisma**
+   ```sh
+   npx prisma migrate dev
+   ```
+
+4. **Jalankan backend**
+   ```sh
+   nodemon .
+   ```
+---
 ## 🎉 Selesai!
 Sekarang proyek berjalan di lokal. Happy coding! 🚀
 
