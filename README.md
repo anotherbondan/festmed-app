@@ -46,7 +46,8 @@ festmed-app/
    ```
 2. **Install dependencies**
    ```sh
-   npm install
+   npm install @chakra-ui/react @emotion/react @emotion/styled @tanstack/react-query axios formik framer-motion next next-themes react react-dom react-icons yup
+
    ```
 3. **Jalankan Next.js**
    ```sh
