@@ -5,7 +5,7 @@ Pastikan Anda telah menginstal:
 - [Node.js](https://nodejs.org/) (disarankan versi terbaru LTS)
 - [Git](https://git-scm.com/)
 - [npm](https://www.npmjs.com/)
-- [PostgreSQL]()
+- [PostgreSQL](https://www.postgresql.org/)
 
 ## 📂 Struktur Proyek
 ```
